@@ -38,7 +38,7 @@ Users should be able to:
 
 ### 🔗 Links
 
-- **Solution URL:** [https://github.com/Juan-Restrepo-Dev/]([https://github.com/Juan-Restrepo-Dev/bento-grid](https://github.com/Juan-Restrepo-Dev/Challenge-frontendMentor-Bento-grid.git))
+- **Solution URL:** (https://github.com/Juan-Restrepo-Dev/Challenge-frontendMentor-Bento-grid.git))
 - **Live Site URL:** _Project currently runs on Live Server locally. A public deployment (e.g., GitHub Pages or Vercel) will be added soon._
 
 ---
