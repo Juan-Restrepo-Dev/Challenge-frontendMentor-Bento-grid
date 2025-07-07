@@ -1,110 +1,110 @@
-# Frontend Mentor - Bento grid solution
+# Frontend Mentor - Bento Grid Solution
 
-This is a solution to the [Bento grid challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/bento-grid-RMydElrlOj). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is my solution to the [Bento Grid challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/bento-grid-RMydElrlOj). It helped me sharpen my CSS Grid layout skills, implement responsive design across breakpoints, and apply modern font strategies using both static and variable sources.
 
-## Table of contents
+---
+
+## 📋 Table of Contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
+  - [The Challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
+- [My Process](#my-process)
+  - [Built With](#built-with)
+  - [What I Learned](#what-i-learned)
+  - [Continued Development](#continued-development)
+  - [Useful Resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+---
 
-## Overview
+## 📌 Overview
 
-### The challenge
+### 🎯 The Challenge
 
 Users should be able to:
 
-- View the optimal layout for the interface depending on their device's screen size
+- View the layout optimized for different screen sizes (mobile, tablet, desktop)
+- Navigate a Bento-style grid system that rearranges responsively
+- Experience clean typography and semantic layout across devices
 
-### Screenshot
+### 🖼️ Screenshot
 
-![](./screenshot.jpg)
+![Screenshot](./screenshot.jpg)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+> Replace with your actual screenshot when ready.
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+### 🔗 Links
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+- **Solution URL:** [https://github.com/Juan-Restrepo-Dev/bento-grid](https://github.com/Juan-Restrepo-Dev/bento-grid)
+- **Live Site URL:** _Project currently runs on Live Server locally. A public deployment (e.g., GitHub Pages or Vercel) will be added soon._
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+---
 
-### Links
+## ⚙️ My Process
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+### 🔧 Built With
 
-## My process
+- Semantic HTML5
+- CSS Custom Properties (variables)
+- CSS Grid & Flexbox
+- Mobile-first responsive workflow
+- BEM methodology
+- Variable fonts with static fallbacks
 
-### Built with
+---
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+### 💡 What I Learned
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- **Grid layout strategies:** I used `display: grid` in combination with `grid-template-areas` to define a semantic and responsive layout across desktop, tablet, and mobile views.
+- **Modular CSS design:** I organized styles using the BEM methodology and grouped repeatable properties for better maintainability.
+- **Responsive design with media queries:** I built a mobile-first layout and added fine-grained control for tablets and large screens.
+- **Variable fonts:** I used `@supports (font-variation-settings: normal)` to load variable fonts with graceful fallback support:
 
-### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+@supports (font-variation-settings: normal) {
+  @font-face {
+    font-family: 'DMSansVar';
+    src: url('../fonts/DMSans-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: 400 800;
+    font-style: normal;
+  }
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+---
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+### 🚀 Continued Development
 
-### Continued development
+Next steps I want to explore:
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+- Building a utility-first helper system for spacing, font sizing, and breakpoints
+- Adding animation and interaction feedback for enhanced UX
+- Conducting accessibility audits for screen readers and keyboard navigation
+- Deploying the site publicly on GitHub Pages or Vercel
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+---
 
-### Useful resources
+### 📚 Useful Resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [CSS Tricks – A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [web.dev – Variable Fonts Guide (ES)](https://web.dev/articles/variable-fonts?hl=es) — Helped me understand how to use and optimize variable fonts with proper fallbacks
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+---
 
-## Author
+## 👨‍💻 Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- GitHub – [@Juan-Restrepo-Dev](https://github.com/Juan-Restrepo-Dev)
+- Frontend Mentor – [@juanjo-repo](https://www.frontendmentor.io/profile/juanjo-repo)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+---
 
-## Acknowledgments
+## 🙌 Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+Big thanks to:
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- [Frontend Mentor](https://www.frontendmentor.io?ref=challenge) for providing this realistic and fun design challenge  
+- [web.dev’s article on variable fonts](https://web.dev/articles/variable-fonts?hl=es) for helping me deeply understand modern web typography and performance techniques  
+- team leader **Lina** at **Riwi** for sharing this challenge with me and encouraging continuous growth throughout the learning process
